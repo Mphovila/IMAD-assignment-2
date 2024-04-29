@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/BtnNext"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="276dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="40dp"
+        android:text="Welcome to Cairo your Tamagotchi App"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,TextSizeCheck" />
+
+    <Button
+        android:id="@+id/BtnFeed"
+        android:layout_width="95dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="50dp"
+        android:text="Feed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Petimage"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btnClean"
+        android:layout_width="94dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp"
+        android:text="Clean"
+        app:layout_constraintStart_toEndOf="@+id/BtnFeed"
+        app:layout_constraintTop_toBottomOf="@+id/Petimage"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btnHappy"
+        android:layout_width="96dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="50dp"
+        android:text="Happy"
+        app:layout_constraintStart_toEndOf="@+id/btnClean"
+        app:layout_constraintTop_toBottomOf="@+id/Petimage"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="100dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="27dp"
+        android:text="Clean :"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        tools:ignore="HardcodedText,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="96dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="33dp"
+        android:text="Happy :"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:ignore="HardcodedText,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="100dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="54dp"
+        android:text="Hunger :"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnFeed"
+        tools:ignore="HardcodedText,TextSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/Petimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="33dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt"
+        app:srcCompat="@drawable/img_3"
+        tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck,UnknownId" />
+
+    <EditText
+        android:id="@+id/hungerValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="55dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/btnClean"
+        tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/CleanlinessValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/hungerValue"
+        tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/happyValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/CleanlinessValue"
+        tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
